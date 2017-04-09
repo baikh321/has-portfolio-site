@@ -73,6 +73,113 @@ h6 {
   text-transform: uppercase;
 }
 
+
+.noscroll {
+  overflow: hidden;
+}
+
+
+/*###################
+### Initial Entry ###
+###################*/
+
+.initial-entry-start {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10000;
+  background: #fff;
+  opacity: 0.95;
+}
+
+  .initial-entry-background {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10000;
+  }
+
+    .initial-entry {
+      display: none;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      -webkit-box-align: center;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 10000;
+      /*background: rgba(0,0,0,0.75);*/
+      background: #f6f6f6;
+    }
+
+      .initial-entry-final {}
+
+        .password {}
+
+          .password-label {
+              float: left;
+              margin: 0px 20px 0 0;
+              color: #333;
+              font-family: 'Kepler std subhead 26203', sans-serif;
+              font-size: 28px;
+              line-height: 40px;
+              font-weight: 600;
+              text-align: right;
+              letter-spacing: 0.5px;
+          }
+
+          .password-entry {
+              width: 200px;
+              /*margin: 2px 0 0;*/
+              padding: 0 0 0px;
+              background: transparent;
+              border: none;
+              border-bottom: 1px solid #333;
+              color: #333;
+
+              font-family: 'Kepler std display 26108', sans-serif;
+              font-size: 28px;
+              line-height: 40px;
+              font-weight: 400;
+              letter-spacing: 0.5px;
+          }
+
+          .password-entry:focus {
+            border-bottom: 1px solid #333;
+            outline: none;
+          }
+
+          .enter {
+            display: none;
+          }
+
+          .password-error {
+            display: none;
+              text-align: center;
+              margin-top: 20px;
+              color: #AAAAAA;
+              font-family: Montserrat, sans-serif;
+              font-size: 10px;
+              line-height: 18px;
+              font-weight: 700;
+              letter-spacing: 2px;
+              text-transform: uppercase;
+          }
+
+
+
+
+
 .frame {
   position: relative;
   left: 0px;
