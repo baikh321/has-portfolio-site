@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="7px" height="15px" viewBox="0 0 7 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>FB Icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Site_1.0-Copy-4" transform="translate(-1174.000000, -769.000000)" fill="#AAAAAA">
+            <g id="Social-Icons" transform="translate(1174.000000, 769.000000)">
+                <path d="M6.05027322,3.20531915 C5.70054645,3.09680851 5.29836066,3.02446809 4.93114754,3.02446809 C4.47650273,3.02446809 3.49726776,3.33191489 3.49726776,3.9287234 L3.49726776,5.35744681 L5.82295082,5.35744681 L5.82295082,7.76276596 L3.49726776,7.76276596 L3.49726776,14.4 L1.15409836,14.4 L1.15409836,7.76276596 L0,7.76276596 L0,5.35744681 L1.15409836,5.35744681 L1.15409836,4.14574468 C1.15409836,2.31914894 1.95846995,0.8 3.89945355,0.8 C4.56393443,0.8 5.75300546,0.836170213 6.4,1.0712766 L6.05027322,3.20531915 Z" id="FB-Icon"></path>
+            </g>
+        </g>
+    </g>
+</svg>
