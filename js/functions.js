@@ -6,6 +6,8 @@ $(document).ready(function() {
 	########### Password Entry ########
 	#################################*/
 
+	function password() {
+
 	$(".initial-entry-background").fadeIn(300, function() {
 		$(".initial-entry").css("display", "flex").hide().fadeIn(300);
 		$("body").addClass("noscroll");
@@ -36,40 +38,48 @@ $(document).ready(function() {
 		}
 	});
 
+	}
+	password();
+
+
 
 
 	/*#################################
 	########### Navigation ############
 	#################################*/
 
+	function navigation() {
 
-	$(".navToggle").on("click", function(){
-	  $(this).toggleClass("open");
-	$("#menu").toggleClass("active");
-	})
-
-
-
-	$("#menu a").on("click", function() {
-	  //openCloseNav();
-	  
-	  if ($("#menu").hasClass("active")) {
-	    // if hamburger menu has active class, remove active class
-	    $("#menu").removeClass("active");
-
-	    // reset the hamburger
-	    $(".navToggle").toggleClass("open");
+		$(".navToggle").on("click", function(){
+			$(this).toggleClass("open");
+			$("#menu").toggleClass("active");
+		})
 
 
-	  }
-	  else {
-	    // do nothing
-	  };
 
-	  //console.log('test click');
+		$("#menu a").on("click", function() {
+		  //openCloseNav();
+		  
+		  if ($("#menu").hasClass("active")) {
+		    // if hamburger menu has active class, remove active class
+		    $("#menu").removeClass("active");
+
+		    // reset the hamburger
+		    $(".navToggle").toggleClass("open");
 
 
-	});
+		  }
+		  else {
+		    // do nothing
+		  };
+
+		  //console.log('test click');
+
+
+		});
+
+	}
+	navigation();
 
 
 
@@ -78,7 +88,7 @@ $(document).ready(function() {
 	########### WayPoints #############
 	#################################*/
 
-
+	function waypoints() {
 
 	$('.waypoint').each( function(i) {
 
@@ -97,10 +107,11 @@ $(document).ready(function() {
 			//} else if (direction === 'up' && animClassUp ) {
 			} else if (direction === 'up' ) {
 				
-				$el.removeClass('show');
+				$el.addClass('show');
+				// $el.removeClass('show');
 			}
 
-		}, { offset: '80%' });
+		}, { offset: '50%' });
 
 
 
@@ -139,9 +150,13 @@ $(document).ready(function() {
 			});
 
 
-		}, { offset: '50%' });
+		}, { offset: '80%' });
 
 	});
+
+	}
+	waypoints();
+
 
 
 
@@ -154,6 +169,75 @@ $(document).ready(function() {
 
 
 
+
+	/* SmoothState */
+	// $(function(){
+	//   'use strict';
+	//   var $body    = $('html, body'), // Define jQuery collection 
+	//       $page  = $('#main').smoothState({
+	//         onStart : {
+	//           duration: 250,
+	//           render: function () {
+	//             content.toggleAnimationClass('is-exiting');
+	            
+	//             // Scroll user to the top
+	//             $body.animate({ 'scrollTop': 0 });
+
+	//           }
+	//         }
+	//       }).data('smoothState');
+	// });
+	/* end SmoothState */
+
+	/* SmoothState */
+	$(function(){
+		'use strict';
+		var $body = $('html, body'), // Define jQuery collection
+			$page = ('#main'),
+  		options = {
+  			debug: true,
+  			scroll: false,
+  			prefetch: false,
+  			cacheLength: 2,
+  			onStart: {
+  				duration: 250,
+  				render: function ($container){
+  					$container.addClass('is-exiting');
+  					
+
+  					smoothState.restartCSSAnimations();
+
+
+  				}
+  			},
+  			onReady: {
+  				render: function ($container, $newContent){
+
+  					$container.removeClass('is-exiting');
+  					
+
+  					$container.html($newContent);
+
+  					$body.animate({ 'scrollTop': 0 });
+
+  				}
+  			},
+  			onAfter: function(url, $container, $newContent) {
+
+  				// re-run and JS functions as needed
+
+  				navigation();
+  				waypoints();
+  				password();
+  				
+  			}
+  		},
+  		//smoothState = $page.smoothState(options).data('smoothState');
+  		smoothState = $('#main').smoothState(options).data('smoothState');
+
+	  		
+	});
+	/* end SmoothState */
 
 
 });

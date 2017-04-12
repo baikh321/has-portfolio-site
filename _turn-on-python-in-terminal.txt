@@ -1,0 +1,10 @@
+
+
+
+Get Local Running:
+
+$ cd /home/somedir
+$ python -m SimpleHTTPServer
+
+
+
