@@ -111,7 +111,7 @@ $(document).ready(function() {
 				// $el.removeClass('show');
 			}
 
-		}, { offset: '50%' });
+		}, { offset: '100%' });
 
 
 
@@ -150,7 +150,7 @@ $(document).ready(function() {
 			});
 
 
-		}, { offset: '80%' });
+		}, { offset: '50%' });
 
 	});
 
@@ -200,7 +200,7 @@ $(document).ready(function() {
   			prefetch: false,
   			cacheLength: 2,
   			onStart: {
-  				duration: 250,
+  				duration: 500,
   				render: function ($container){
   					$container.addClass('is-exiting');
   					
@@ -218,7 +218,10 @@ $(document).ready(function() {
 
   					$container.html($newContent);
 
-  					$body.animate({ 'scrollTop': 0 });
+  					$body.scrollTop(0);
+  					// $body.animate({ 'scrollTop': 0 });
+
+  					
 
   				}
   			},
