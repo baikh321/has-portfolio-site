@@ -4,7 +4,12 @@
 Get Local Running:
 
 $ cd /home/somedir
-$ python -m SimpleHTTPServer
+ python -m SimpleHTTPServer
 
 
 
+1.So add: cd (make sure you add a space between CD and your directory)
+2.drag folder after cd 
+3. copy and paste: python -m SimpleHTTPServer
+
+4. open browser and type “0.0.0.0:8000”

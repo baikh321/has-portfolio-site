@@ -542,6 +542,7 @@ h6 {
   margin-top: 200px;
   margin-right: 8%;
   margin-left: 8%;
+  margin-bottom: 200px;
 }
 
 .work-thumbnail {
@@ -797,28 +798,28 @@ h6 {
 }
 
 
-.work-dunkincom .work-masthead-img { 
+.work-masthead-img.work-dunkincom { 
   background-image: url('../images/dd/dd-bg-img.jpg');
 }
-.work-zellepayments .work-masthead-img { 
+.work-masthead-img.work-zellepayments { 
   background-image: url('../images/zelle/zelle_masthead.jpg');
 }
-.work-veritascom .work-masthead-img-2 { 
+.work-masthead-img-2.work-veritascom { 
   background-image: url('../images/veritas/veritas_masthead.jpg');
 }
 .work-masthead-img.work-ac { 
   background-image: url('../images/ac/ac-bg-img.jpg');
 }
-.work-tjmaxx .work-masthead-img { 
+.work-masthead-img.work-tjmaxx { 
   background-image: url('../images/tjmaxx/tjmaxx_masthead.jpg');
 }
-.work-cricket .work-masthead-img { 
+.work-masthead-img.work-cricket { 
   background-image: url('../images/cricket/cricket_masthead.jpg');
 }
-.work-dunkinar .work-masthead-img-2 { 
+.work-masthead-img-2.work-dunkinar { 
   background-image: url('../images/ddar/ddar_masthead.jpg');
 }
-.work-dunkinbot .work-masthead-img-2 { 
+.work-masthead-img-2.work-dunkinbot { 
   background-image: url('../images/ddbot/ddbot_masthead.jpg');
 }
 
@@ -956,6 +957,12 @@ h6 {
   margin-bottom: 10%;
 
 }
+
+/*.equalspacing {
+  padding-top: 50px;
+  margin-top: -50px;
+
+}*/
 
 
 /*.video_container {
@@ -1465,6 +1472,7 @@ h6 {
 
 
 
+
 /*
  * CSS Page Transitions
  * Don't forget to add vendor prefixes!
@@ -1472,7 +1480,8 @@ h6 {
 /*.m-scene {*/
   /** Basic styles for an animated element */
   .scene_element {
-    animation-duration: 500ms;
+    animation-delay: 0.1s;
+    animation-duration: 1s;
     transition-timing-function: ease-in;
     animation-fill-mode: both;
 
@@ -1517,11 +1526,18 @@ h6 {
   }
 
 
+  .scene_element--delay {
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+  }
+
+
   /** Reverse "exit" animations */
-  .is-exiting {
-      .scene_element {
-        animation-direction: alternate-reverse;
-      }
+  .is-exiting .scene_element {
+    /*animation-direction: alternate-reverse;*/
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+
   }
 /*}*/
 

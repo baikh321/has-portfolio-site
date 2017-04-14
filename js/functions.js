@@ -111,7 +111,7 @@ $(document).ready(function() {
 				// $el.removeClass('show');
 			}
 
-		}, { offset: '100%' });
+		}, { offset: '50%' });
 
 
 
@@ -200,7 +200,7 @@ $(document).ready(function() {
   			prefetch: false,
   			cacheLength: 2,
   			onStart: {
-  				duration: 500,
+  				duration: 200,
   				render: function ($container){
   					$container.addClass('is-exiting');
   					
@@ -221,7 +221,7 @@ $(document).ready(function() {
   					$body.scrollTop(0);
   					// $body.animate({ 'scrollTop': 0 });
 
-  					
+
 
   				}
   			},
