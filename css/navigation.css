@@ -179,7 +179,8 @@
 #menu.active {
   /*height: 320px;*/
   height: 100vh;
-  width: 100vw;
+  /*width: 100vw;*/
+  width: 100%;
   border-bottom: 1px solid black;
   background-color: white;
   opacity: 0.9;
