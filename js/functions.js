@@ -243,4 +243,17 @@ $(document).ready(function() {
 	/* end SmoothState */
 
 
+if( typeof console === 'object' ) {
+    console.log(
+        '\n' +
+        'Hello there, Thanks for visiting my portfolio site!\n' +
+        'If you would like to get in touch, please leave me a message at hhybaik@gmail.com\n' +
+        '\n' +
+        'Developed & Designed by Hayoung Baik\n'
+        
+    );
+}
+
+
+
 });
