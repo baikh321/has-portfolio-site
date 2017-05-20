@@ -1111,10 +1111,22 @@ h6 {
     padding-right: 0px;
     padding-left: 0px;
   }
-  .worksection {
+
+
+/*  .worksection {
     margin-right: 6%;
     margin-left: 6%;
+  }*/
+
+
+
+   .worksection {
+    margin-right: 8%;
+    margin-left: 8%;
   }
+
+
+
 
   .work-rightcol {
     padding-right: 0px;
